@@ -9,7 +9,15 @@
 
 ## 2).Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben gestionarse en las siguientes maquina (explique porqué):
 
+* Sistemas embebidos
 
+* Mainframe
+
+* Workstation
+
+* Server
+
+* Mobile
 
 
 ## 3).Caracterice dos casos de uso para implementar un OS para servidor y PC.
@@ -41,9 +49,10 @@
 
 ## 7).El DMA (acceso directo a memoria) se usa en dispositivos I/O para evitar uso innecesario de la   CPU
 
+* ¿Como interactuá la CPU con el dispositivo para coordinar la transferencia?
 
 
-
+* ¿Como sabe la CPU que las operaciones de memoria se han completado?
 
 
 
@@ -53,7 +62,10 @@
 
 
 
-
-
-
 ## 9).Explique con un ejemplo, como se manifiesta el problema de mantener la coherencia de los datos de cache en los siguientes entornos
+
+* Sistema distribuido
+
+* Sistema multipocesador
+
+* Sistema de un solo procesador

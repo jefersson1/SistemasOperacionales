@@ -1,6 +1,6 @@
 ## 1).En entornos compartidos, los usuarios comparten el sistema. Esto puede dar lugar a varios problemas de seguridad
 
-
+* a)
 
 
 ## 2).Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben 

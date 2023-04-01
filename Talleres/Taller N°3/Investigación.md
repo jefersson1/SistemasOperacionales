@@ -7,8 +7,7 @@
 * b)Es posible asegurar el mismo grado de seguridad en un sistema compartido que en un sistema dedicado. Explique su respuesta
 
 
-## 2).Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben 
-## gestionarse en las siguientes maquina (explique porqué):
+## 2).Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben gestionarse en las siguientes maquina (explique porqué):
 
 
 

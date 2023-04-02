@@ -14,15 +14,20 @@
 
 ## 2).Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben gestionarse en las siguientes maquina (explique porqué):
 
-* Sistemas embebidos
+* Sistemas embebidos:
+  * Los sistemas embebidos suelen tener recursos limitados en términos de CPU, memoria y almacenamiento. Por lo tanto, es importante gestionar adecuadamente estos recursos para garantizar que el sistema funcione de manera eficiente. Además, es importante gestionar la energía para garantizar una duración de la batería adecuada en dispositivos portátiles.
 
-* Mainframe
+* Mainframe:
+  * Los mainframes son sistemas de alto rendimiento diseñados para procesar grandes cantidades de datos. Los recursos que deben gestionarse en los mainframes incluyen la CPU, la memoria, el almacenamiento y la red. Además, es importante gestionar adecuadamente la seguridad y el acceso para garantizar que los datos estén protegidos.
 
 * Workstation
-
+  * Las workstations son sistemas de alto rendimiento diseñados para tareas intensivas de procesamiento, como diseño gráfico, edición de vídeo y simulaciones científicas. Los recursos que deben gestionarse en las workstations incluyen la CPU, la memoria, el almacenamiento y la tarjeta gráfica. Además, es importante gestionar adecuadamente la seguridad y el acceso para garantizar que los datos estén protegidos.
+  
 * Server
+  * Los servidores son sistemas diseñados para proporcionar servicios a una red de computadoras. Los recursos que deben gestionarse en los servidores incluyen la CPU, la memoria, el almacenamiento y la red. Además, es importante gestionar adecuadamente la seguridad y el acceso para garantizar que los datos estén protegidos.
 
 * Mobile
+  * Los dispositivos móviles, como teléfonos inteligentes y tabletas, tienen recursos limitados en términos de CPU, memoria y almacenamiento. Es importante gestionar adecuadamente estos recursos para garantizar que el sistema funcione de manera eficiente y que la duración de la batería sea adecuada. Además, es importante gestionar adecuadamente la seguridad y el acceso para garantizar que los datos estén protegidos en caso de pérdida o robo del dispositivo.
 
 
 ## 3).Caracterice dos casos de uso para implementar un OS para servidor y PC.

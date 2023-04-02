@@ -32,19 +32,37 @@
 
 ## 3).Caracterice dos casos de uso para implementar un OS para servidor y PC.
 
+ * Servidores de aplicaciones: Los servidores de aplicaciones son sistemas que ejecutan aplicaciones empresariales críticas, como aplicaciones de gestión de relaciones con clientes (CRM), software de gestión de la cadena de suministro (SCM), software de gestión de recursos empresariales (ERP) y software de gestión de bases de datos. En este caso de uso, se necesita un OS para servidor que proporcione una plataforma estable y segura para ejecutar estas aplicaciones críticas y garantizar la disponibilidad y el rendimiento de la aplicación. El OS debe ser escalable y capaz de manejar una carga de trabajo variable y demandas de memoria, almacenamiento y capacidad de procesamiento. Además, el OS debe proporcionar herramientas de administración y monitoreo para asegurar la integridad de la aplicación y la seguridad de los datos.
 
+ * Estaciones de trabajo para diseño gráfico y edición de video: Las estaciones de trabajo para diseño gráfico y edición de video requieren un OS para PC que sea capaz de manejar tareas de procesamiento intensivas. En este caso de uso, se necesita un OS para PC que proporcione una plataforma estable y capaz de manejar grandes archivos y aplicaciones pesadas. El OS debe ser compatible con herramientas de software específicas para diseño gráfico y edición de video, como Adobe Photoshop y Final Cut Pro, y debe ser capaz de gestionar adecuadamente los recursos de hardware, como la tarjeta gráfica, la CPU y la memoria. Además, el OS debe proporcionar una interfaz fácil de usar y herramientas de productividad para mejorar la eficiencia del usuario.
 
-
+En resumen, los casos de uso para implementar un OS para servidor y PC pueden variar dependiendo de las necesidades específicas del usuario. Los sistemas operativos para servidores deben proporcionar una plataforma estable y segura para ejecutar aplicaciones empresariales críticas, mientras que los sistemas operativos para PC deben ser capaces de manejar tareas de procesamiento intensivas y proporcionar herramientas de productividad para mejorar la eficiencia del usuario.
 
 ## 4).Compare las diferencias entre multiprocesamiento simétrico y asimétrico.
 
+Las principales diferencias entre SMP y AMP son:
 
+ * Acceso a recursos: en un sistema SMP, todos los procesadores tienen acceso igualitario a los recursos del sistema, mientras que en un sistema AMP, los procesadores tienen funciones específicas y diferentes niveles de acceso a los recursos.
+ 
+ * Distribución de carga de trabajo: en un sistema SMP, la carga de trabajo se distribuye de manera uniforme entre los procesadores, mientras que en un sistema AMP, cada procesador tiene una tarea específica.
+ 
+ * Velocidad de reloj y capacidad de memoria: en un sistema SMP, todos los procesadores tienen la misma velocidad de reloj y capacidad de memoria, mientras que en un sistema AMP, los procesadores pueden tener diferentes velocidades de reloj y capacidades de memoria.
 
-
+En general, el multiprocesamiento simétrico es más común en sistemas de propósito general, como servidores y computadoras de escritorio, mientras que el multiprocesamiento asimétrico se utiliza comúnmente en sistemas embebidos y de tiempo real.
 
 ## 5).Enumere los requerimientos para que dos maquinas se junten en un cluster y provean un servicio de alta disponibilidad (HA)
 
+ 1. Hardware compatible: Las máquinas del clúster deben ser compatibles en cuanto a hardware para que funcionen juntas. Esto incluye aspectos como la arquitectura de la CPU, la cantidad y tipo de memoria RAM, la capacidad de almacenamiento y la velocidad de red.
+ 
+ 2. Sistema operativo y software compatibles: Todas las máquinas del clúster deben estar ejecutando el mismo sistema operativo y tener instalado el software necesario para proporcionar el servicio HA. Esto incluye software de clustering y herramientas para compartir recursos y balancear la carga de trabajo.
 
+ 3. Conexión de red redundante: Es importante tener una conexión de red redundante para evitar puntos únicos de falla. Las máquinas del clúster deben estar conectadas a una red de alta velocidad y disponer de una conexión de red secundaria como medida de contingencia.
+
+ 4. Recursos compartidos: Los recursos, como el almacenamiento y la memoria, deben estar compartidos entre las máquinas del clúster para garantizar la disponibilidad continua del servicio. Es necesario utilizar herramientas para gestionar y sincronizar el acceso a los recursos compartidos.
+ 
+ 5. Monitoreo y gestión del clúster: Es importante contar con herramientas para monitorear el estado del clúster, identificar y resolver problemas, y realizar la gestión de los recursos compartidos. Esto ayuda a garantizar la disponibilidad y confiabilidad del servicio HA.
+
+ 6. Plan de recuperación ante desastres: Es necesario contar con un plan de recuperación ante desastres en caso de que falle una máquina o recurso del clúster. Esto incluye la configuración de copias de seguridad y medidas para la recuperación en caso de fallos en el hardware o software del clúster.
 
 
 

@@ -2,7 +2,7 @@ Taller N°3 de sistemas operacionales
 -------------------------------------
 
 
-## 1).En entornos compartidos, los usuarios comparten el sistema. Esto puede dar lugar a varios problemas de seguridad
+### 1).En entornos compartidos, los usuarios comparten el sistema. Esto puede dar lugar a varios problemas de seguridad
 
 * a)Mencione dos problemas y expliquelos.
 
@@ -16,7 +16,7 @@ Taller N°3 de sistemas operacionales
   En los sistemas dedicados la medidas de seguridad son mas faciles de implementar y mantener, debido a que solo exite un usuario o grupo de usuarios que buscan acceder al sistema y los riesgos de seguridad son mas faciles de controlar y limitar.
 
 
-## 2).Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben gestionarse en las siguientes maquina (explique porqué):
+### 2).Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben gestionarse en las siguientes maquina (explique porqué):
 
 * Sistemas embebidos:
   * Los sistemas embebidos suelen tener recursos limitados en términos de CPU, memoria y almacenamiento. Por lo tanto, es importante gestionar adecuadamente estos recursos para garantizar que el sistema funcione de manera eficiente. Además, es importante gestionar la energía para garantizar una duración de la batería adecuada en dispositivos portátiles.
@@ -34,7 +34,7 @@ Taller N°3 de sistemas operacionales
   * Los dispositivos móviles, como teléfonos inteligentes y tabletas, tienen recursos limitados en términos de CPU, memoria y almacenamiento. Es importante gestionar adecuadamente estos recursos para garantizar que el sistema funcione de manera eficiente y que la duración de la batería sea adecuada. Además, es importante gestionar adecuadamente la seguridad y el acceso para garantizar que los datos estén protegidos en caso de pérdida o robo del dispositivo.
 
 
-## 3).Caracterice dos casos de uso para implementar un OS para servidor y PC.
+### 3).Caracterice dos casos de uso para implementar un OS para servidor y PC.
 
  * Servidores de aplicaciones: Los servidores de aplicaciones son sistemas que ejecutan aplicaciones empresariales críticas, como aplicaciones de gestión de relaciones con clientes (CRM), software de gestión de la cadena de suministro (SCM), software de gestión de recursos empresariales (ERP) y software de gestión de bases de datos. En este caso de uso, se necesita un OS para servidor que proporcione una plataforma estable y segura para ejecutar estas aplicaciones críticas y garantizar la disponibilidad y el rendimiento de la aplicación. El OS debe ser escalable y capaz de manejar una carga de trabajo variable y demandas de memoria, almacenamiento y capacidad de procesamiento. Además, el OS debe proporcionar herramientas de administración y monitoreo para asegurar la integridad de la aplicación y la seguridad de los datos.
 
@@ -42,7 +42,7 @@ Taller N°3 de sistemas operacionales
 
 En resumen, los casos de uso para implementar un OS para servidor y PC pueden variar dependiendo de las necesidades específicas del usuario. Los sistemas operativos para servidores deben proporcionar una plataforma estable y segura para ejecutar aplicaciones empresariales críticas, mientras que los sistemas operativos para PC deben ser capaces de manejar tareas de procesamiento intensivas y proporcionar herramientas de productividad para mejorar la eficiencia del usuario.
 
-## 4).Compare las diferencias entre multiprocesamiento simétrico y asimétrico.
+### 4).Compare las diferencias entre multiprocesamiento simétrico y asimétrico.
 
 Las principales diferencias entre SMP y AMP son:
 
@@ -54,7 +54,7 @@ Las principales diferencias entre SMP y AMP son:
 
 En general, el multiprocesamiento simétrico es más común en sistemas de propósito general, como servidores y computadoras de escritorio, mientras que el multiprocesamiento asimétrico se utiliza comúnmente en sistemas embebidos y de tiempo real.
 
-## 5).Enumere los requerimientos para que dos maquinas se junten en un cluster y provean un servicio de alta disponibilidad (HA)
+### 5).Enumere los requerimientos para que dos maquinas se junten en un cluster y provean un servicio de alta disponibilidad (HA)
 
  1. Hardware compatible: Las máquinas del clúster deben ser compatibles en cuanto a hardware para que funcionen juntas. Esto incluye aspectos como la arquitectura de la CPU, la cantidad y tipo de memoria RAM, la capacidad de almacenamiento y la velocidad de red.
  
@@ -72,7 +72,7 @@ En general, el multiprocesamiento simétrico es más común en sistemas de prop�
 
 
 
-## 6).Compare las diferencias entre una excepción y una interrupción.
+### 6).Compare las diferencias entre una excepción y una interrupción.
 
 Mientras que las interrupciones son señales externas que provienen de dispositivos de hardware, las excepciones son señales internas que indican que se ha producido un error o una condición inesperada en el programa. Además, el manejo y la causa de ambas son diferentes, y las interrupciones son generalmente manejadas por el sistema operativo, mientras que las excepciones son manejadas por el propio programa.
 
@@ -88,7 +88,7 @@ Principales diferencias:
 
  * Control: En general, las interrupciones están diseñadas para permitir que el sistema operativo tome el control de la CPU temporalmente y se encargue de la interrupción. En cambio, las excepciones son manejadas por el propio programa y no requieren necesariamente la intervención del sistema operativo.
 
-## 7).El DMA (acceso directo a memoria) se usa en dispositivos I/O para evitar uso innecesario de la   CPU
+### 7).El DMA (acceso directo a memoria) se usa en dispositivos I/O para evitar uso innecesario de la   CPU
 
 * ¿Como interactuá la CPU con el dispositivo para coordinar la transferencia?
 
@@ -104,7 +104,7 @@ La CPU puede saber que las operaciones de memoria se han completado de varias ma
 
 En general, la CPU utiliza señales de control y/o interrupciones para indicar el estado de las operaciones de memoria y para esperar a que se completen antes de continuar con la ejecución de instrucciones.
 
-## 8).Identifique dos razones por las que la cache es útil. ¿Que problemas resuelve y causa?
+### 8).Identifique dos razones por las que la cache es útil. ¿Que problemas resuelve y causa?
 
 Razones por las cuales la cache es útil:
 
@@ -114,7 +114,7 @@ Razones por las cuales la cache es útil:
 
 Sin embargo, también puede causar problemas si no se gestiona correctamente, como la inconsistencia de datos y la dificultad para gestionar la coherencia de la cache.
 
-## 9).Explique con un ejemplo, como se manifiesta el problema de mantener la coherencia de los datos de cache en los siguientes entornos
+### 9).Explique con un ejemplo, como se manifiesta el problema de mantener la coherencia de los datos de cache en los siguientes entornos
 
 * Sistema distribuido
 

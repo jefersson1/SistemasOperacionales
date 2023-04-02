@@ -70,19 +70,35 @@ En general, el multiprocesamiento simétrico es más común en sistemas de prop�
 
 ## 6).Compare las diferencias entre una excepción y una interrupción.
 
+Mientras que las interrupciones son señales externas que provienen de dispositivos de hardware, las excepciones son señales internas que indican que se ha producido un error o una condición inesperada en el programa. Además, el manejo y la causa de ambas son diferentes, y las interrupciones son generalmente manejadas por el sistema operativo, mientras que las excepciones son manejadas por el propio programa.
 
+Principales diferencias: 
 
+ * Origen: Una interrupción es una señal externa que proviene de un dispositivo de hardware, como un temporizador, una tarjeta de red o un dispositivo de entrada/salida. En cambio, una excepción es una señal interna que proviene del propio software, como una violación de acceso a memoria, una operación ilegal o una división por cero.
+ 
+ * Momento de ocurrencia: Las interrupciones ocurren en cualquier momento, independientemente del flujo de ejecución del programa, mientras que las excepciones se producen durante la ejecución normal del programa.
+ 
+ * Manejo: El manejo de una interrupción implica suspender temporalmente la ejecución del programa para atender la interrupción, mientras que el manejo de una excepción implica capturar la excepción, tomar medidas para corregir el problema (si es posible) y continuar con la ejecución normal del programa.
 
+ * Causa: Las interrupciones generalmente indican que un dispositivo necesita atención inmediata, como una transmisión de red que ha llegado o un temporizador que ha expirado. Las excepciones, por otro lado, indican que se ha producido un error o una condición inesperada en el programa.
 
+ * Control: En general, las interrupciones están diseñadas para permitir que el sistema operativo tome el control de la CPU temporalmente y se encargue de la interrupción. En cambio, las excepciones son manejadas por el propio programa y no requieren necesariamente la intervención del sistema operativo.
 
 ## 7).El DMA (acceso directo a memoria) se usa en dispositivos I/O para evitar uso innecesario de la   CPU
 
 * ¿Como interactuá la CPU con el dispositivo para coordinar la transferencia?
 
+  * La CPU programa el controlador de DMA indicando la dirección de memoria donde se deben almacenar los datos, la dirección de memoria donde se encuentran los datos a transferir y la cantidad de datos que se deben transferir. A continuación, el controlador de DMA se encarga de controlar el acceso al bus del sistema y transferir los datos entre el dispositivo de entrada/salida y la memoria.
+
+  * Durante la transferencia de datos, la CPU se mantiene informada sobre el progreso de la transferencia a través de señales de interrupción o mediante la lectura del estado del controlador de DMA. Una vez que se completa la transferencia, el controlador de DMA emite una señal de interrupción para notificar a la CPU que la operación de transferencia ha finalizado. La CPU puede entonces procesar los datos transferidos y continuar con su trabajo normal.
 
 * ¿Como sabe la CPU que las operaciones de memoria se han completado?
 
+La CPU puede saber que las operaciones de memoria se han completado de varias maneras, dependiendo del tipo de operación que se esté realizando.
+  * En el caso de operaciones de memoria que no involucren el uso de DMA, la CPU es responsable de acceder a la memoria y realizar las operaciones de lectura o escritura necesarias. La CPU espera a que la operación de memoria se complete antes de continuar con la ejecución de instrucciones. Esto se logra a través del uso de señales de control de memoria, como el bit de espera (wait) o el bit de listo (ready) en el bus de memoria. Cuando la operación de memoria está en curso, el dispositivo de memoria establece el bit de espera, lo que indica a la CPU que debe esperar antes de continuar. Cuando la operación de memoria se completa, el dispositivo establece el bit de listo, lo que indica a la CPU que la operación ha finalizado.
+  * En el caso de operaciones de memoria que involucren el uso de DMA, la CPU programa el controlador de DMA para realizar las operaciones de transferencia de datos, y se mantiene informada sobre el progreso de la transferencia a través de señales de interrupción o mediante la lectura del estado del controlador de DMA. Una vez que se completa la transferencia, el controlador de DMA emite una señal de interrupción para notificar a la CPU que la operación de transferencia ha finalizado.
 
+En general, la CPU utiliza señales de control y/o interrupciones para indicar el estado de las operaciones de memoria y para esperar a que se completen antes de continuar con la ejecución de instrucciones.
 
 ## 8).Identifique dos razones por las que la cache es útil. ¿Que problemas resuelve y causa?
 

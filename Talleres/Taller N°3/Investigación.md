@@ -1,6 +1,6 @@
 Taller N°3 de sistemas operacionales
 -------------------------------------
--------------------------------------
+
 
 ## 1).En entornos compartidos, los usuarios comparten el sistema. Esto puede dar lugar a varios problemas de seguridad
 

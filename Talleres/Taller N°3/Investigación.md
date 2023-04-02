@@ -2,7 +2,7 @@
 
 * a)Mencione dos problemas y expliquelos.
 
-
+ * En la informatica dos problemas comunes en entornos compartidos son la vulnerabilidad a ataques de malware y la violación a la provacidad de los usuarios
 
 * b)Es posible asegurar el mismo grado de seguridad en un sistema compartido que en un sistema dedicado. Explique su respuesta
 

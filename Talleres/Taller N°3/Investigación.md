@@ -102,14 +102,24 @@ En general, la CPU utiliza señales de control y/o interrupciones para indicar e
 
 ## 8).Identifique dos razones por las que la cache es útil. ¿Que problemas resuelve y causa?
 
+Razones por las cuales la cache es útil:
 
+ 1. Reducción de tiempos de acceso a memoria: La cache permite acceder a los datos de manera más rápida que si se accediera directamente desde la memoria principal. Como la cache es un tipo de memoria de alta velocidad que se encuentra más cerca de la CPU que la memoria principal, el tiempo de acceso a los datos es menor, lo que acelera la ejecución de los programas.
+ 
+ 2. Reducción de la carga en el bus de memoria: Al reducir el número de accesos a la memoria principal, la cache también reduce la carga en el bus de memoria. Esto significa que los recursos del sistema se utilizan de manera más eficiente, ya que se reduce el número de ciclos de bus y se evita la congestión del bus.
 
-
+Sin embargo, también puede causar problemas si no se gestiona correctamente, como la inconsistencia de datos y la dificultad para gestionar la coherencia de la cache.
 
 ## 9).Explique con un ejemplo, como se manifiesta el problema de mantener la coherencia de los datos de cache en los siguientes entornos
 
 * Sistema distribuido
 
+  * En un sistema distribuido, los nodos del sistema pueden tener su propia memoria y cache local. Si varios nodos acceden a los mismos datos, se podría producir una inconsistencia de los mismos debido a la falta de coherencia entre los distintos nodos. Por ejemplo, supongamos que dos nodos acceden a la misma variable en diferentes momentos. Si un nodo actualiza la variable, es posible que el otro nodo acceda a la versión anterior de la misma, lo que causaría una inconsistencia.
+
 * Sistema multipocesador
 
+  * En un sistema distribuido, los nodos del sistema pueden tener su propia memoria y cache local. Si varios nodos acceden a los mismos datos, se podría producir una inconsistencia de los mismos debido a la falta de coherencia entre los distintos nodos. Por ejemplo, supongamos que dos nodos acceden a la misma variable en diferentes momentos. Si un nodo actualiza la variable, es posible que el otro nodo acceda a la versión anterior de la misma, lo que causaría una inconsistencia.
+ 
 * Sistema de un solo procesador
+
+  * En un sistema de un solo procesador, solo existe una cache que interactúa con la memoria principal. Si un programa accede a una variable almacenada en memoria, la versión en la cache se actualizará automáticamente con la última versión de los datos. Sin embargo, si el programa modifica la variable y luego la lee de nuevo, el valor leído puede ser el valor anterior, lo que causaría una inconsistencia. Por ejemplo, si un programa modifica una variable en una línea de código y luego la lee de nuevo en la siguiente línea, podría haber una inconsistencia si la cache no se actualiza adecuadamente.

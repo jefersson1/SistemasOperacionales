@@ -1,4 +1,4 @@
-## Taller N°4 de sistemas operacionales
+Taller N°4 de sistemas operacionales
 
 ----------------------------------------
 

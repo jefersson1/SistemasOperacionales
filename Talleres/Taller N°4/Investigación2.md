@@ -1,11 +1,11 @@
 ## Taller N°4 de sistemas operacionales
 
 ### 1. Las funciones compartidas por el OS pueden dividirse en dos categorias, describalas.
-
+```
 |Gestion de Aplicaciones |Gestion de Dispositivos |
 |---|---|
 |   |   |
-
+```
 ### 2. Enumere cinco servicios proporcionados por el OS diseñados para facilitar la comodidad del usuario.
 
 

@@ -59,11 +59,25 @@ Para generar un informe estadístico de la cantidad de tiempo y recursos consumi
 
 * Cual es el propósito del interprete de comandos?
 
+ Proporcionar una interfaz de usuario para que los usuarios interactúen con el sistema operativo y ejecuten programas. El intérprete de comandos es una aplicación que toma las órdenes escritas por el usuario, las interpreta y las ejecuta.
 
 * Por qué esta separado del kernel?
 
+Existen muchas razones por las cuales se da de esta manera pero la principal razón por la que el intérprete de comandos (shell) se separa del kernel es la seguridad. Al separar el intérprete de comandos del kernel, se limita el acceso de las aplicaciones de usuario a los recursos críticos del sistema, lo que aumenta la seguridad del sistema operativo.
+El kernel es la parte del sistema operativo que tiene acceso directo al hardware y controla el acceso a los recursos del sistema, como la memoria y los dispositivos de entrada/salida. Si se permitiera que las aplicaciones de usuario tuvieran acceso directo al kernel, sería muy fácil comprometer la seguridad del sistema y causar daños graves.
 
 * Liste los requisitos para desarrollar un interprete de comandos.
+  * Conocimientos de programación: Es necesario tener habilidades de programación en el lenguaje en el que se va a desarrollar el intérprete de comandos. Los lenguajes comunes utilizados para desarrollar intérpretes de comandos son C, C++, Python, Perl, entre otros.
+
+Conocimientos de los sistemas operativos: Se requiere un conocimiento sólido de los sistemas operativos para entender cómo funcionan los comandos y las funciones del sistema operativo que el intérprete de comandos debe interactuar. Esto incluye el sistema de archivos, la administración de procesos, la gestión de memoria, la entrada y salida de datos, entre otros.
+
+Diseño del lenguaje de comandos: El intérprete de comandos debe tener un lenguaje de comandos diseñado para que los usuarios puedan interactuar con el sistema operativo. Este lenguaje de comandos debe ser fácil de entender, fácil de usar y debe proporcionar una funcionalidad útil.
+
+Interfaz de usuario: El intérprete de comandos debe tener una interfaz de usuario bien diseñada que sea fácil de usar y que permita al usuario interactuar con el sistema operativo de manera intuitiva.
+
+Pruebas y depuración: Es necesario realizar pruebas exhaustivas para asegurarse de que el intérprete de comandos funcione correctamente y no tenga errores. La depuración también es un paso crítico para solucionar cualquier problema que pueda surgir durante el desarrollo.
+
+Documentación: Es importante proporcionar una documentación clara y completa que explique cómo funciona el intérprete de comandos, cómo usarlo y cómo solucionar problemas comunes.
 
 ### 7. Compare las ventajas y desventajas de los modelos de intercomunicación.
 

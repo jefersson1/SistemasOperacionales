@@ -69,28 +69,51 @@ El kernel es la parte del sistema operativo que tiene acceso directo al hardware
 * Liste los requisitos para desarrollar un interprete de comandos.
   * Conocimientos de programación: Es necesario tener habilidades de programación en el lenguaje en el que se va a desarrollar el intérprete de comandos. Los lenguajes comunes utilizados para desarrollar intérpretes de comandos son C, C++, Python, Perl, entre otros.
 
-Conocimientos de los sistemas operativos: Se requiere un conocimiento sólido de los sistemas operativos para entender cómo funcionan los comandos y las funciones del sistema operativo que el intérprete de comandos debe interactuar. Esto incluye el sistema de archivos, la administración de procesos, la gestión de memoria, la entrada y salida de datos, entre otros.
+  * Conocimientos de los sistemas operativos: Se requiere un conocimiento sólido de los sistemas operativos para entender cómo funcionan los comandos y las funciones del sistema operativo que el intérprete de comandos debe interactuar. Esto incluye el sistema de archivos, la administración de procesos, la gestión de memoria, la entrada y salida de datos, entre otros.
 
-Diseño del lenguaje de comandos: El intérprete de comandos debe tener un lenguaje de comandos diseñado para que los usuarios puedan interactuar con el sistema operativo. Este lenguaje de comandos debe ser fácil de entender, fácil de usar y debe proporcionar una funcionalidad útil.
+  * Diseño del lenguaje de comandos: El intérprete de comandos debe tener un lenguaje de comandos diseñado para que los usuarios puedan interactuar con el sistema operativo. Este lenguaje de comandos debe ser fácil de entender, fácil de usar y debe proporcionar una funcionalidad útil.
 
-Interfaz de usuario: El intérprete de comandos debe tener una interfaz de usuario bien diseñada que sea fácil de usar y que permita al usuario interactuar con el sistema operativo de manera intuitiva.
+  * Interfaz de usuario: El intérprete de comandos debe tener una interfaz de usuario bien diseñada que sea fácil de usar y que permita al usuario interactuar con el sistema operativo de manera intuitiva.
 
-Pruebas y depuración: Es necesario realizar pruebas exhaustivas para asegurarse de que el intérprete de comandos funcione correctamente y no tenga errores. La depuración también es un paso crítico para solucionar cualquier problema que pueda surgir durante el desarrollo.
+  * Pruebas y depuración: Es necesario realizar pruebas exhaustivas para asegurarse de que el intérprete de comandos funcione correctamente y no tenga errores. La depuración también es un paso crítico para solucionar cualquier problema que pueda surgir durante el desarrollo.
 
-Documentación: Es importante proporcionar una documentación clara y completa que explique cómo funciona el intérprete de comandos, cómo usarlo y cómo solucionar problemas comunes.
+  * Documentación: Es importante proporcionar una documentación clara y completa que explique cómo funciona el intérprete de comandos, cómo usarlo y cómo solucionar problemas comunes.
 
 ### 7. Compare las ventajas y desventajas de los modelos de intercomunicación.
 
+| VENTAJAS  | DESVENTAJAS  |
+|---|---|
+|Comunicación efectiva: Uno de los principales beneficios de los modelos de intercomunicación es que promueven la comunicación efectiva entre los participantes. Esto se debe a que se enfocan en la retroalimentación y la comprensión mutua de los mensajes.   |Tiempo: Los modelos de intercomunicación pueden ser más lentos que otros modelos de comunicación debido a la necesidad de retroalimentación y diálogo, lo que puede retrasar el proceso de toma de decisiones.   |
+|Flexibilidad: Los modelos de intercomunicación pueden ser adaptados a una variedad de situaciones y contextos de comunicación, lo que los hace muy útiles en una amplia gama de escenarios.   |Puede ser difícil de implementar: Los modelos de intercomunicación requieren que los participantes tengan habilidades efectivas de comunicación y escucha, lo que puede ser difícil de lograr en algunos casos.   |
+|Comprensión más profunda: Debido a que los modelos de intercomunicación se centran en la retroalimentación y el intercambio de ideas, los participantes tienen la oportunidad de comprender más profundamente los mensajes y las perspectivas de los demás.   |Posibilidad de conflicto: Debido a que los modelos de intercomunicación fomentan la retroalimentación y el diálogo, existe la posibilidad de que se produzcan conflictos o desacuerdos entre los participantes.   |
+|Fomento de la confianza y el respeto mutuo: Al promover la retroalimentación y el diálogo, los modelos de intercomunicación fomentan la confianza y el respeto mutuo entre los participantes, lo que es esencial para una comunicación efectiva y saludable.   |Falta de objetividad: Si los participantes no están dispuestos a escuchar las perspectivas de los demás y a considerar la retroalimentación de manera objetiva, los modelos de intercomunicación pueden ser menos efectivos.   |
 
 ### 8. Conteste las siguientes preguntas:
 
 * Cual es la principal ventaja de usar microkernel en el diseño del OS?
 
-* Como interactúan los programas de usuario y los servicios del OS en una arquitectura
+La principal ventaja de usar un microkernel en el diseño de un sistema operativo es la modularidad y la flexibilidad que proporciona. En un diseño de microkernel, las funciones básicas del sistema operativo, como la gestión de memoria y la planificación de procesos, se implementan en el núcleo mínimo (microkernel) del sistema. Otras funciones, como los controladores de dispositivos y los servicios del sistema, se ejecutan en espacios aislados (llamados servidores) fuera del núcleo.
+
+* Como interactúan los programas de usuario y los servicios del OS en una arquitectura?
+
+En una arquitectura de sistema operativo, los programas de usuario y los servicios del sistema interactúan mediante llamadas al sistema (system calls), los programas de usuario solicitan servicios o recursos del sistema operativo a través de llamadas al sistema, que son atendidas por los servicios del sistema operativo que se ejecutan en el espacio del kernel del sistema operativo.
 
 * Cuales son las desventajas de usar la arquitectura de microkernel?
 
+Desventajas:
+ * Rendimiento: la modularidad de la arquitectura de microkernel puede afectar el rendimiento del sistema, ya que cada servicio o controlador de dispositivo se ejecuta en un espacio aislado, lo que puede aumentar la latencia de las llamadas al sistema y la cantidad de cambios de contexto necesarios para completar una tarea.
+
+ * Complejidad: la arquitectura de microkernel es inherentemente más compleja que otras arquitecturas de sistemas operativos, ya que requiere que los servicios y controladores de dispositivos se ejecuten en espacios aislados. Esto puede dificultar el desarrollo y la depuración de los servicios y controladores de dispositivos.
+
+ * Compatibilidad: la modularidad de la arquitectura de microkernel puede dificultar la compatibilidad con el software existente. Dado que los servicios y controladores de dispositivos se ejecutan en espacios aislados, es posible que algunos controladores de dispositivos o software de sistema existentes no sean compatibles con la arquitectura de microkernel.
+
+ * Seguridad: aunque la arquitectura de microkernel se considera más segura que otras arquitecturas de sistemas operativos, sigue siendo vulnerable a ataques externos, especialmente si los servicios y controladores de dispositivos no están bien diseñados y se ejecutan en espacios aislados inseguros.
+
 ### 9. Compare las ventajas y desventajas de usar VM.
 
-
-
+| VENTAJAS  | DESVENTAJAS  |
+|---|---|
+|Aislamiento: las VM se ejecutan en su propio espacio de memoria aislado, lo que las hace útiles para probar y ejecutar software en un ambiente seguro y controlado. Esto permite que múltiples VM se ejecuten en el mismo servidor físico, cada una con su propio sistema operativo y aplicaciones.   |Rendimiento: el uso de una VM puede resultar en un rendimiento más lento debido a la sobrecarga de la virtualización. La ejecución de un sistema operativo y aplicaciones adicionales en la parte superior del sistema operativo anfitrión puede aumentar la carga en la CPU, la memoria y el almacenamiento.   |
+|Portabilidad: las VM pueden ser movidas fácilmente entre diferentes hosts físicos, lo que permite la portabilidad y la escalabilidad del software y los servicios.   |Costo: el uso de VM puede requerir hardware adicional y licencias de software, lo que puede aumentar el costo de implementación y mantenimiento.   |
+|Consolidación: al permitir que múltiples VM se ejecuten en un solo servidor físico, las VM pueden ayudar a consolidar y reducir el número de servidores físicos necesarios para ejecutar el software y los servicios.   |Complejidad: la configuración y administración de VM puede ser más compleja que la administración de servidores físicos. La gestión de múltiples sistemas operativos y aplicaciones en diferentes VM puede requerir habilidades y conocimientos adicionales.   |
+|Configuración flexible: las VM permiten una configuración flexible de hardware y software, lo que facilita la configuración y la instalación de software y servicios.   |Vulnerabilidad: las VM también pueden ser vulnerables a amenazas de seguridad, y los fallos de seguridad en el sistema operativo o las aplicaciones de una VM pueden afectar a otras VM que se ejecutan en el mismo servidor físico.   |

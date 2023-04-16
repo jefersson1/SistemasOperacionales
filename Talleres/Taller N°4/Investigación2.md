@@ -36,10 +36,24 @@ Para generar un informe estadístico de la cantidad de tiempo y recursos consumi
 
 ### 4. Enumere y describa cinco actividades de un OS enfocadas a la administración de archivos.
 
+4.1 Creación de archivos: El OS proporciona herramientas para crear nuevos archivos, ya sea a través de la línea de comandos o mediante una interfaz gráfica de usuario. Al crear un archivo, el OS asigna espacio en disco y le da un nombre y una ubicación en el sistema de archivos.
 
-### 5. Compare las ventajas y desventajas de usar la misma interfaz de llamadas al sistema para la
-manipulación de archivos como de dispositivos.
+4.2 Organización de archivos: El OS administra los archivos en el sistema de archivos, incluyendo la creación y eliminación de carpetas, la copia y el movimiento de archivos, la búsqueda y la clasificación de archivos, y la asignación de permisos de acceso.
 
+4.3 Acceso a archivos: El OS proporciona herramientas para acceder a los archivos en el sistema de archivos, ya sea mediante la navegación en una interfaz de usuario o mediante la línea de comandos. Además, el OS gestiona los permisos de acceso a los archivos, lo que significa que solo los usuarios autorizados pueden leer, escribir o ejecutar un archivo determinado.
+
+4.4 Protección de archivos: El OS protege los archivos del sistema de archivos contra la corrupción o el daño accidental, por ejemplo, mediante el uso de copias de seguridad y puntos de restauración. También puede incluir herramientas para proteger los archivos contra el acceso no autorizado, como el cifrado de archivos.
+
+4.5 Mantenimiento del sistema de archivos: El OS también administra la integridad del sistema de archivos, incluyendo la detección y corrección de errores en el disco y la organización de archivos fragmentados. También puede incluir herramientas para la optimización del disco, que pueden ayudar a mejorar el rendimiento del sistema de archivos en general.
+
+4.6 En resumen, las actividades del sistema operativo enfocadas a la administración de archivos incluyen la creación, organización, acceso, protección y mantenimiento del sistema de archivos en general.
+
+### 5. Compare las ventajas y desventajas de usar la misma interfaz de llamadas al sistema para la manipulación de archivos como de dispositivos.
+| VENTAJAS  | DESVENTAJAS  |
+|---|---|
+|Simplificación del código: Al utilizar la misma interfaz de llamadas al sistema para la manipulación de archivos y dispositivos, se puede simplificar el código de la aplicación, ya que no es necesario escribir código adicional para interactuar con diferentes tipos de dispositivos.   |Pérdida de funcionalidad: Si se utiliza la misma interfaz de llamadas al sistema para la manipulación de archivos y dispositivos, puede haber una pérdida de funcionalidad para algunos dispositivos. Por ejemplo, un dispositivo puede tener características específicas que no se puedan utilizar a través de la interfaz de llamadas al sistema genérica.   |
+| Flexibilidad: La misma interfaz de llamadas al sistema para la manipulación de archivos y dispositivos permite que la aplicación sea más flexible y fácil de mantener, ya que se pueden agregar o quitar dispositivos sin cambiar el código de la aplicación.  |Dificultad para depurar errores: Al utilizar la misma interfaz de llamadas al sistema para diferentes dispositivos, puede ser más difícil depurar errores que surjan durante la manipulación de los mismos. Esto se debe a que la misma llamada al sistema puede tener diferentes comportamientos dependiendo del dispositivo específico.   |
+|Mejora de la portabilidad: Si la misma interfaz de llamadas al sistema es compatible con múltiples plataformas, la aplicación será más portátil y se podrá ejecutar en diferentes sistemas operativos.   |Rendimiento: La misma interfaz de llamadas al sistema puede no ser óptima para todos los dispositivos. Por ejemplo, una llamada al sistema que funciona bien para la manipulación de archivos puede no ser adecuada para dispositivos de alta velocidad, como los dispositivos de red.   |
 
 ### 6. Conteste las siguientes preguntas:
 

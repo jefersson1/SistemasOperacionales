@@ -2,9 +2,9 @@
 
 ### 1. Las funciones compartidas por el OS pueden dividirse en dos categorias, describalas.
 
-|Gestion de Aplicaciones |Gestion de Dispositivos |
+|Funciones del kernel |Funciones de espacio de usuario |
 |---|---|
-|   |   |
+| Estas funciones son las más fundamentales y esenciales para el sistema operativo. Están ubicadas en el núcleo o kernel del sistema operativo y proporcionan servicios de bajo nivel, como la gestión de memoria, la planificación de procesos, el manejo de interrupciones y la gestión de dispositivos de entrada y salida. Estas funciones son críticas para la operación del sistema operativo y se ejecutan en modo privilegiado, lo que significa que solo el kernel tiene acceso directo a ellas.  | Estas funciones se ejecutan fuera del kernel en el espacio de usuario del sistema operativo y proporcionan servicios de nivel superior. Ejemplos de estas funciones incluyen bibliotecas de funciones compartidas, controladores de dispositivo de usuario, servicios de red y herramientas de administración del sistema. A diferencia de las funciones del kernel, las funciones de espacio de usuario se ejecutan en modo no privilegiado, lo que significa que cualquier proceso de usuario puede acceder a ellas, aunque con ciertas restricciones de seguridad.  |
 
 
 ### 2. Enumere cinco servicios proporcionados por el OS diseñados para facilitar la comodidad del usuario.

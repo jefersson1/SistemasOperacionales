@@ -90,6 +90,50 @@ Tamaño variable:
 
 ### 7.Describa los estados de un proceso
 
+En un sistema operativo, un proceso puede estar en uno de los siguientes estados:
+
+* Nuevo: El proceso se ha creado, pero todavía no se ha cargado en la memoria.
+
+* Listo: El proceso ha sido cargado en la memoria y está listo para ser ejecutado por el procesador. Sin embargo, aún no se le ha asignado tiempo de CPU.
+
+* En ejecución: El proceso está siendo ejecutado por el procesador.
+
+* Bloqueado: El proceso no puede continuar su ejecución debido a una operación de entrada/salida u otra operación que requiere que el proceso espere.
+
+* Finalizado: El proceso ha terminado su ejecución.
+
+* Suspensión: El proceso se ha detenido temporalmente y se ha retirado de la memoria principal. El proceso se puede reanudar más tarde y volver al estado Listo.
+
+Además de estos estados, algunos sistemas operativos tienen estados adicionales, como el estado Zombie, que se refiere a un proceso que ha finalizado pero aún no ha sido eliminado de la tabla de procesos del sistema operativo.
+
+Cabe resaltar que el proceso puede cambiar de estado en función de las interrupciones de hardware, como las interrupciones de entrada/salida, o en función de la planificación de procesos del sistema operativo, que decide qué proceso debe ejecutarse en el procesador en un momento dado.
+
 ### 8.Que datos se encuentran en un PCB.
 
+Entre los datos que se pueden encontrar en un PCB se incluyen:
+
+* Identificador del proceso: un identificador único que se utiliza para identificar el proceso en el sistema operativo.
+
+* Estado del proceso: el estado actual del proceso, como Nuevo, Listo, En ejecución, Bloqueado o Finalizado.
+
+* Información de prioridad: la prioridad asignada al proceso, lo que determina el orden en que el proceso recibirá tiempo de CPU.
+
+* Contadores de tiempo de CPU: el tiempo total de CPU utilizado por el proceso y el tiempo de CPU restante que se le asignó.
+
+* Información de asignación de memoria: información sobre la memoria que se ha asignado al proceso, incluida la dirección base y el tamaño.
+
+* Registros de CPU: los valores actuales de los registros de CPU del proceso.
+
+* Información de gestión de archivos: información sobre los archivos que el proceso está utilizando, como su dirección de archivo, modo de acceso y permisos.
+
+* Información de gestión de recursos: información sobre los recursos que el proceso ha solicitado, como dispositivos de E/S.
+
+* Información de planificación de procesos: información utilizada por el planificador de procesos del sistema operativo para decidir qué proceso debe ejecutarse a continuación.
+
 ### 9.Describa un modelo de comunicación Cliente-Servidor.
+
+En un modelo de comunicación Cliente-Servidor, un cliente envía solicitudes a un servidor para obtener recursos o servicios específicos. El servidor responde a esas solicitudes proporcionando los recursos o servicios solicitados. La comunicación entre el cliente y el servidor se realiza a través de algún tipo de canal de comunicación, como una red o un bus de datos.
+
+El modelo Cliente-Servidor puede tener diferentes configuraciones según la forma en que se realice la comunicación. Por ejemplo, puede ser un modelo basado en protocolos TCP/IP, donde la comunicación entre el cliente y el servidor se realiza a través de la red utilizando el protocolo TCP/IP. También puede ser un modelo basado en Web, donde la comunicación se realiza a través de un servidor web utilizando el protocolo HTTP.
+
+Este modelo se utiliza comúnmente en aplicaciones empresariales y en aplicaciones distribuidas en red, ya que permite una mayor escalabilidad y flexibilidad en el manejo de recursos y servicios, así como una mejor gestión y seguridad de los datos.

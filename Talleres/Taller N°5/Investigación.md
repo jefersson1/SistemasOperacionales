@@ -57,7 +57,36 @@ El cambio de contexto es un proceso en el que el sistema operativo cambia la eje
 
 ### 5.Defina las ventajas y desventajas desde el punto de vista del OS para envío por copia y envío por referencia.
 
+Envío por copia:
+
+| Ventajas  | Desventajas  |
+|---|---|
+| Es más seguro desde el punto de vista del sistema operativo, ya que cada proceso tiene su propia copia de los datos y no puede afectar directamente a los datos de otro proceso.  | Puede ser más costoso en términos de uso de memoria, ya que se deben crear copias adicionales de los datos para cada proceso que los necesite   |
+| Es útil para situaciones en las que se desea mantener una copia independiente de los datos para cada proceso  | Puede ser más lento en términos de rendimiento, ya que se deben realizar operaciones adicionales de copia de datos cada vez que se llama a una función  |
+
+Envío por referencia:
+
+| Ventajas  | Desventajas  |
+|---|---|
+| Es más eficiente en términos de uso de memoria, ya que se comparte una sola copia de los datos entre varios procesos o funciones  | Puede ser menos seguro desde el punto de vista del sistema operativo, ya que los procesos pueden afectar directamente a los datos compartidos y causar problemas de corrupción de datos o errores de sincronización  |
+| Es más rápido en términos de rendimiento, ya que no se necesitan operaciones adicionales de copia de datos  | Puede ser más difícil de depurar en situaciones en las que varios procesos comparten los mismos datos y se producen errores de corrupción de datos  |
+| Es útil para situaciones en las que se desea que varias funciones o procesos trabajen con los mismos datos  |   |
+
 ### 6.Defina las ventajas y desventajas desde el punto de vista del OS para mensajes de tamaño fijo y de tamaño variable.
+
+Tamaño fijo:
+
+| Ventajas  | Desventajas  |
+|---|---|
+| Son más eficientes en términos de uso de memoria, ya que se puede reservar una cantidad fija de memoria para cada mensaje  | Pueden ser menos flexibles en términos de la cantidad de datos que se pueden enviar en cada mensaje  |
+| Son más fáciles de implementar en el sistema operativo, ya que se pueden utilizar estructuras de datos simples y predecibles para manejar los mensajes  | Pueden ser menos eficientes en términos de uso de ancho de banda de red, ya que se puede enviar menos datos en cada mensaje  |
+
+Tamaño variable:
+
+| Ventajas  | Desventajas  |
+|---|---|
+| Son más flexibles en términos de la cantidad de datos que se pueden enviar en cada mensaje  | Son menos eficientes en términos de uso de memoria, ya que se debe reservar una cantidad variable de memoria para cada mensaje  |
+| Son más eficientes en términos de uso de ancho de banda de red, ya que se puede enviar más datos en cada mensaje  | Son más difíciles de implementar en el sistema operativo, ya que se necesitan estructuras de datos más complejas para manejar los mensajes de tamaño variable  |
 
 ### 7.Describa los estados de un proceso
 

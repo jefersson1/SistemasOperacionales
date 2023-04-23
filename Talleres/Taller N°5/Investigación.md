@@ -39,19 +39,21 @@ El cambio de contexto es un proceso en el que el sistema operativo cambia la eje
 
 ### 4.Defina las ventajas y desventajas desde el punto de vista del programador para comunicación síncrona y asíncrona.
 
-|   Ventajas   |   Desventajas   |
-|---|---|---|---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-
-|   |   |   |   |
-|:-:|:-:|---|---|
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
+ Comunicación síncrona:
+ 
+| Ventajas  | Desventajas  |
+|---|---|
+| Es más fácil de implementar y depurar que la comunicación asíncrona  | Puede conducir a problemas de latencia y rendimiento si el proceso receptor tarda mucho en responder o no responde en absoluto  |
+| Los errores de comunicación son más fáciles de identificar y corregir, ya que la comunicación se produce en un orden secuencial y predecible  | Puede bloquear el proceso emisor si el proceso receptor no está disponible o está ocupado  |
+| Es útil para situaciones en las que se requiere una respuesta inmediata del proceso receptor.  |   |
+ 
+ Comunicación asíncrona:
+ 
+| Ventajas  | Desventajas  |
+|---|---|
+| Permite un mayor paralelismo y concurrencia, ya que el proceso emisor no tiene que esperar una respuesta del proceso receptor antes de continuar con otras tareas  |   |
+| Es útil para situaciones en las que no se requiere una respuesta inmediata del proceso receptor  | Es más difícil de implementar y depurar que la comunicación síncrona, ya que los mensajes pueden ser recibidos en cualquier orden y en cualquier momento  |Los errores de comunicación pueden ser más difíciles de identificar y corregir, ya que los mensajes pueden ser recibidos en cualquier momento y en cualquier orden
+| Es menos propenso a problemas de latencia y rendimiento que la comunicación síncrona, ya que el proceso emisor puede continuar su ejecución sin esperar una respuesta del proceso receptor  |   |
 
 ### 5.Defina las ventajas y desventajas desde el punto de vista del OS para envío por copia y envío por referencia.
 

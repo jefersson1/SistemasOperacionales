@@ -42,7 +42,7 @@ El cambio de contexto es un proceso en el que el sistema operativo cambia la eje
 |   Síncronica    |  Asíncronica     |
 |-------|-------|
 | Ventajas  | Desventajas  | Ventajas  | Desventajas  |
-|---|---|---|---|
+|------|------|
 |   |   |   |   |
 |   |   |   |   |
 

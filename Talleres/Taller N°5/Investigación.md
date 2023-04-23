@@ -46,6 +46,13 @@ El cambio de contexto es un proceso en el que el sistema operativo cambia la eje
 |   |   |   |   |
 |   |   |   |   |
 
+|   |   |   |   |
+|:-:|:-:|---|---|
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+
 ### 5.Defina las ventajas y desventajas desde el punto de vista del OS para envío por copia y envío por referencia.
 
 ### 6.Defina las ventajas y desventajas desde el punto de vista del OS para mensajes de tamaño fijo y de tamaño variable.

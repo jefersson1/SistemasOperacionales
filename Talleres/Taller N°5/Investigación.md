@@ -39,10 +39,10 @@ El cambio de contexto es un proceso en el que el sistema operativo cambia la eje
 
 ### 4.Defina las ventajas y desventajas desde el punto de vista del programador para comunicación síncrona y asíncrona.
 
-|   Síncronica    |  Asíncronica     |
-|----|---|----|---|
-| Ventajas  | Desventajas  | Ventajas  | Desventajas  |
-|------|------|
+|   Síncronica    |  Asíncronica   |
+|----|----|----|----|
+|   |   |   |   |
+|   |   |   |   |
 |   |   |   |   |
 |   |   |   |   |
 

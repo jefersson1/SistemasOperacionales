@@ -22,10 +22,35 @@ Para evitar estos conflictos, los planificadores de procesos utilizan diferentes
 ### 5.Considere el siguiente conjunto de procesos, todos llegan al mismo tiempo en el orden del  subíndice:
 
 
-
 ### Dibuje el diagrama de Gantt para FCFS, SJF, por prioridades (# de prioridad baja = a alta  prioridad) y RR (cuanto = 1).
 
+El tiempo de llegada se asume que es 0 para todos los procesos.
 
+* FCFS:
+
+| P1  | P2  | P3  | P4  | P5  |
+|---|---|---|---|---|
+| 0  | 11  | 13  | 14  | 19  |
+
+* SJF:
+
+| P1  | P2  | P3  | P4  | P5  |
+|---|---|---|---|---|
+| 1  | 2  | 4  | 9  | 19  |
+
+* De prioridad baja = a alta  prioridad:
+
+| P1  | P2  | P3  | P4  | P5  |
+|---|---|---|---|---|
+| 1  | 6  | 16  | 18  | 19  |
+
+* RR :
+
+| P1  | P2  | P3  | P4  | P5  | P1  | P5  | P1  | P2  | P3  | P5  |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10  | 11  |
+
+Para el algoritmo RR, el proceso P1 se ejecuta durante 1 unidad de tiempo y luego se mueve al final de la cola de procesos, lo que permite que los demás procesos se ejecuten en orden hasta que P1 vuelve a la cola después de cada ejecución.
 
 ### 6. Cual es el tiempo de ejecución de cada proceso para cada algoritmo?
 

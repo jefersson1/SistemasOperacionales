@@ -22,7 +22,7 @@ Para evitar estos conflictos, los planificadores de procesos utilizan diferentes
 ### 5.Considere el siguiente conjunto de procesos, todos llegan al mismo tiempo en el orden del  subíndice:
 
 <div>
-<p style = "text-align:center">
+<p style = 'text-align:center'>
 <img src="https://github.com/jefersson1/SistemasOperacionales/blob/main/Talleres/Taller%20N%C2%B08/Captura%20de%20pantalla%202023-05-14%20182921.png" alt="JuveYell" width="300px">
 </p>
 </div>

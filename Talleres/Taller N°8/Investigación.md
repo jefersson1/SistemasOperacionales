@@ -66,50 +66,50 @@ Para el algoritmo RR, el proceso P1 se ejecuta durante 1 unidad de tiempo y lueg
  * P4: 1 unidad de tiempo
  * P5: 5 unidades de tiempo
 * SJF:
- * P2: 1 unidad de tiempo
- * P4: 1 unidad de tiempo
- * P3: 2 unidades de tiempo
- * P5: 5 unidades de tiempo
- * P1: 10 unidades de tiempo
+  * P2: 1 unidad de tiempo
+  * P4: 1 unidad de tiempo
+  * P3: 2 unidades de tiempo
+  * P5: 5 unidades de tiempo
+  * P1: 10 unidades de tiempo
 * Por prioridades:
- * P2: 1 unidad de tiempo
- * P5: 5 unidades de tiempo
- * P1: 10 unidades de tiempo
- * P3: 2 unidades de tiempo
- * P4: 1 unidad de tiempo
+  * P2: 1 unidad de tiempo
+  * P5: 5 unidades de tiempo
+  * P1: 10 unidades de tiempo
+  * P3: 2 unidades de tiempo
+  * P4: 1 unidad de tiempo
 * RR:
- * P1: 3 unidades de tiempo 
- * P2: 2 unidades de tiempo
- * P3: 2 unidades de tiempo
- * P4: 1 unidad de tiempo
- * P5: 3 unidades de tiempo
+  * P1: 3 unidades de tiempo 
+  * P2: 2 unidades de tiempo
+  * P3: 2 unidades de tiempo
+  * P4: 1 unidad de tiempo
+  * P5: 3 unidades de tiempo
 
 ### 7. Cual es el tiempo de espera de cada proceso para cada algoritmo?
 
 * FCFS:
- * P1: 0 unidades de tiempo
- * P2: 10 unidad de tiempo
-¨* P3: 11 unidades de tiempo
- * P4: 13 unidad de tiempo
- * P5: 14 unidades de tiempo
+  * P1: 0 unidades de tiempo
+  * P2: 10 unidad de tiempo
+  * P3: 11 unidades de tiempo
+  * P4: 13 unidad de tiempo
+  * P5: 14 unidades de tiempo
 * SJF:
- * P2: 0 unidad de tiempo
- * P4: 2 unidad de tiempo
- * P3: 3 unidades de tiempo
- * P5: 5 unidades de tiempo
- * P1: 11 unidades de tiempo
+  * P2: 0 unidad de tiempo
+  * P4: 2 unidad de tiempo
+  * P3: 3 unidades de tiempo
+  * P5: 5 unidades de tiempo
+  * P1: 11 unidades de tiempo
 * Por prioridades:
- * P2: 0 unidad de tiempo
- * P5: 1 unidades de tiempo
- * P1: 2 unidades de tiempo
- * P3: 12 unidades de tiempo
- * P4: 13 unidad de tiempo
+  * P2: 0 unidad de tiempo
+  * P5: 1 unidades de tiempo
+  * P1: 2 unidades de tiempo
+  * P3: 12 unidades de tiempo
+  * P4: 13 unidad de tiempo
 * RR:
- * P1: 6 unidades de tiempo 
- * P2: 1 unidades de tiempo
- * P3: 6 unidades de tiempo
- * P4: 8 unidad de tiempo
- * P5: 9 unidades de tiempo
+  * P1: 6 unidades de tiempo 
+  * P2: 1 unidades de tiempo
+  * P3: 6 unidades de tiempo
+  * P4: 8 unidad de tiempo
+  * P5: 9 unidades de tiempo
 
 ### 8.Que algoritmo puede dar lugar a bloqueos indefinidos?
 

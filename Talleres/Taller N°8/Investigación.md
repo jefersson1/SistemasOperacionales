@@ -60,11 +60,11 @@ Para el algoritmo RR, el proceso P1 se ejecuta durante 1 unidad de tiempo y lueg
 ### 6. Cual es el tiempo de ejecución de cada proceso para cada algoritmo?
 
 * FCFS:
- * P1: 10 unidades de tiempo
- * P2: 1 unidad de tiempo
-¨* P3: 2 unidades de tiempo
- * P4: 1 unidad de tiempo
- * P5: 5 unidades de tiempo
+  * P1: 10 unidades de tiempo
+  * P2: 1 unidad de tiempo
+¨ * P3: 2 unidades de tiempo
+  * P4: 1 unidad de tiempo
+  * P5: 5 unidades de tiempo
 * SJF:
   * P2: 1 unidad de tiempo
   * P4: 1 unidad de tiempo

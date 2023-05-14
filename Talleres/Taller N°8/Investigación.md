@@ -24,7 +24,6 @@ Para evitar estos conflictos, los planificadores de procesos utilizan diferentes
 <div>
 <p style = 'text-align:center;'>
 <img src="https://github.com/jefersson1/SistemasOperacionales/blob/main/Talleres/Taller%20N%C2%B08/Captura%20de%20pantalla%202023-05-14%20182921.png" alt="JuveYell" width="300px">
-<img src="" alt="JuveYell" width="300px">
 </p>
 </div>
 

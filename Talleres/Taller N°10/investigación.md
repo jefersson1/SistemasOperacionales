@@ -3,6 +3,13 @@
 
 ### 1. Considere la imagen, demuestre que las cuatro condiciones necesarias para que se produzca un interbloqueo se cumplen.
 
+* condicion de exclución mutua:
+
+* Condición de espera:
+
+* Condición de no apropiación:
+
+* Condición de espera circular:
 
 
 ### 2. Considere la imagen, enuncie una regla simple para evitar los interbloqueos en este sistema.

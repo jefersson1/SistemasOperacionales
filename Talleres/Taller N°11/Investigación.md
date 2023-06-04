@@ -25,41 +25,42 @@ El compilador debe pasar al editor de ensamblaje la tabla de símbolos, que cont
 
 Tamaño de las particiones de memoria:
 
-100 KB
-500 KB
-200 KB
-300 KB
-600 KB
+ * 100 KB
+ * 500 KB
+ * 200 KB
+ * 300 KB
+ * 600 KB
+
 Procesos a situar:
 
-Proceso A: 212 KB
-Proceso B: 417 KB
-Proceso C: 112 KB
-Proceso D: 426 KB
+ * Proceso A: 212 KB
+ * Proceso B: 417 KB
+ * Proceso C: 112 KB
+ * Proceso D: 426 KB
 
 Algoritmo de primer ajuste:
 En el primer ajuste, se busca la primera partición de memoria lo suficientemente grande para alojar cada proceso.
 
-Proceso A (212 KB): Se situaría en la partición 2 (500 KB) usando 212 KB de esa partición.
-Proceso B (417 KB): Se situaría en la partición 5 (600 KB) usando 417 KB de esa partición.
-Proceso C (112 KB): Se situaría en la partición 1 (100 KB) usando 112 KB de esa partición.
-Proceso D (426 KB): No hay ninguna partición lo suficientemente grande para alojar este proceso, por lo que no se puede situar.
+ * Proceso A (212 KB): Se situaría en la partición 2 (500 KB) usando 212 KB de esa partición.
+ * Proceso B (417 KB): Se situaría en la partición 5 (600 KB) usando 417 KB de esa partición.
+ * Proceso C (112 KB): Se situaría en la partición 1 (100 KB) usando 112 KB de esa partición.
+ * Proceso D (426 KB): No hay ninguna partición lo suficientemente grande para alojar este proceso, por lo que no se puede situar.
 
 Algoritmo de mejor ajuste:
 En el mejor ajuste, se busca la partición más pequeña que sea lo suficientemente grande para alojar cada proceso.
 
-Proceso A (212 KB): Se situaría en la partición 3 (200 KB) usando 212 KB de esa partición.
-Proceso B (417 KB): Se situaría en la partición 5 (600 KB) usando 417 KB de esa partición.
-Proceso C (112 KB): Se situaría en la partición 1 (100 KB) usando 112 KB de esa partición.
-Proceso D (426 KB): Se situaría en la partición 5 (600 KB) usando 426 KB de esa partición.
+ * Proceso A (212 KB): Se situaría en la partición 3 (200 KB) usando 212 KB de esa partición.
+ * Proceso B (417 KB): Se situaría en la partición 5 (600 KB) usando 417 KB de esa partición.
+ * Proceso C (112 KB): Se situaría en la partición 1 (100 KB) usando 112 KB de esa partición.
+ * Proceso D (426 KB): Se situaría en la partición 5 (600 KB) usando 426 KB de esa partición.
 
 Algoritmo de peor ajuste:
 En el peor ajuste, se busca la partición más grande que sea lo suficientemente grande para alojar cada proceso.
 
-Proceso A (212 KB): Se situaría en la partición 5 (600 KB) usando 212 KB de esa partición.
-Proceso B (417 KB): Se situaría en la partición 5 (600 KB) usando 417 KB de esa partición.
-Proceso C (112 KB): Se situaría en la partición 5 (600 KB) usando 112 KB de esa partición.
-Proceso D (426 KB): Se situaría en la partición 5 (600 KB) usando 426 KB de esa partición.
+ * Proceso A (212 KB): Se situaría en la partición 5 (600 KB) usando 212 KB de esa partición.
+ * Proceso B (417 KB): Se situaría en la partición 5 (600 KB) usando 417 KB de esa partición.
+ * Proceso C (112 KB): Se situaría en la partición 5 (600 KB) usando 112 KB de esa partición.
+ * Proceso D (426 KB): Se situaría en la partición 5 (600 KB) usando 426 KB de esa partición.
 
 El algoritmo de peor ajuste hace el uso más eficiente de la memoria en este caso, ya que logra situar todos los procesos utilizando la partición más grande disponible. Sin embargo, es importante tener en cuenta que el mejor ajuste puede ser más eficiente en general, ya que tiende a reducir la fragmentación de la memoria al encontrar la partición más cercana en tamaño al proceso. El primer ajuste puede generar más fragmentación y desperdiciar más espacio en la memoria.
 

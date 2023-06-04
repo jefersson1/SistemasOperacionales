@@ -169,10 +169,14 @@ Dirección física = Base del segmento 4 + Desplazamiento = 1952 + 112 = 2064
 
 Entonces, las direcciones físicas correspondientes son:
 
-Dirección física para 0.430: 649
-Dirección física para 1.10: 2310
-Dirección física para 2.500: 590
-Dirección física para 3.400: 1727
-Dirección física para 4.112: 2064
+  * Dirección física para 0.430: 649
+
+  * Dirección física para 1.10: 2310
+
+  * Dirección física para 2.500: 590
+
+  * Dirección física para 3.400: 1727
+
+  * Dirección física para 4.112: 2064
 
 

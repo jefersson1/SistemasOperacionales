@@ -66,9 +66,17 @@ El algoritmo de peor ajuste hace el uso más eficiente de la memoria en este cas
 
 ### 5. La mayoría de OS permiten a los programas asignar más memoria a su espacio de direcciones durante la ejecución. ¿Que se necesitaría para soportar la asignación dinámica de memoria en los siguientes esquemas?
 
-1. Asignación contigua de memoria.
-2. Segmentación pura.
-3. Paginación pura.
+Para soportar la asignación dinámica de memoria en los esquemas mencionados, se requieren los siguientes elementos:
+
+1. Asignación contigua de memoria:
+  * Un administrador de memoria que sea capaz de asignar y liberar bloques de memoria de manera dinámica durante la ejecución.
+  * Algoritmos de asignación de memoria, como el algoritmo de mejor ajuste o peor ajuste, para encontrar bloques de memoria disponibles que satisfagan las solicitudes de asignación.
+  * Un mecanismo de gestión de fragmentación, como la compactación de memoria o el uso de técnicas de reubicación para reducir la fragmentación interna y externa.
+  * Un sistema de protección de memoria para evitar que un proceso acceda a la memoria asignada a otro proceso.
+  * Un esquema de administración de espacio de direcciones, como el uso de punteros y desplazamientos, para permitir que los programas accedan a su espacio de memoria asignado.
+2. Segmentación pura:
+
+3. Paginación pura:
 
 
 ### 6. Compare los esquemas de organización de la memoria principal basados en una asignación continua de memoria, en una segmentación pura y una paginación pura con respecto a:

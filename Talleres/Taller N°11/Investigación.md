@@ -70,14 +70,22 @@ Para soportar la asignación dinámica de memoria en los esquemas mencionados, s
 
 1. Asignación contigua de memoria:
    * Un administrador de memoria que sea capaz de asignar y liberar bloques de memoria de manera dinámica durante la ejecución.
-  * Algoritmos de asignación de memoria, como el algoritmo de mejor ajuste o peor ajuste, para encontrar bloques de memoria disponibles que satisfagan las solicitudes de asignación.
-  * Un mecanismo de gestión de fragmentación, como la compactación de memoria o el uso de técnicas de reubicación para reducir la fragmentación interna y externa.
-  * Un sistema de protección de memoria para evitar que un proceso acceda a la memoria asignada a otro proceso.
-  * Un esquema de administración de espacio de direcciones, como el uso de punteros y desplazamientos, para permitir que los programas accedan a su espacio de memoria asignado.
+   * Algoritmos de asignación de memoria, como el algoritmo de mejor ajuste o peor ajuste, para encontrar bloques de memoria disponibles que satisfagan las solicitudes de asignación.
+   * Un mecanismo de gestión de fragmentación, como la compactación de memoria o el uso de técnicas de reubicación para reducir la fragmentación interna y externa.
+   * Un sistema de protección de memoria para evitar que un proceso acceda a la memoria asignada a otro proceso.
+   * Un esquema de administración de espacio de direcciones, como el uso de punteros y desplazamientos, para permitir que los programas accedan a su espacio de memoria asignado.
+   
 2. Segmentación pura:
+   * Un administrador de memoria que sea capaz de asignar y liberar segmentos de memoria de manera dinámica durante la ejecución.
+   * Un sistema de protección de memoria para evitar que un proceso acceda a los segmentos asignados a otros procesos.
+   * Una tabla de segmentos que mapee los segmentos lógicos de los procesos a las direcciones físicas correspondientes en la memoria.
+   * Un esquema de administración de espacio de direcciones que permita a los programas acceder a los segmentos asignados en función de sus direcciones lógicas.
 
 3. Paginación pura:
-
+   * Un administrador de memoria que sea capaz de asignar y liberar páginas de memoria de manera dinámica durante la ejecución.
+   * Un sistema de protección de memoria para evitar que un proceso acceda a las páginas asignadas a otros procesos.
+   * Una tabla de páginas que mapee las páginas virtuales de los procesos a las páginas físicas correspondientes en la memoria.
+   * Un mecanismo de traducción de direcciones virtuales a direcciones físicas utilizando la tabla de páginas para permitir que los programas accedan a su memoria asignada.
 
 ### 6. Compare los esquemas de organización de la memoria principal basados en una asignación continua de memoria, en una segmentación pura y una paginación pura con respecto a:
 1. Fragmentación externa.

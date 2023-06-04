@@ -89,9 +89,20 @@ Para soportar la asignación dinámica de memoria en los esquemas mencionados, s
 
 ### 6. Compare los esquemas de organización de la memoria principal basados en una asignación continua de memoria, en una segmentación pura y una paginación pura con respecto a:
 1. Fragmentación externa.
-2. Fragmentación interna.
-3. Capacidad de compartir código.
+   * Asignación continua: Tiende a sufrir de fragmentación externa, ya que los bloques de memoria se asignan de manera continua y pueden quedar espacios vacíos      * entre ellos. Esto puede llevar a una asignación ineficiente de memoria y desperdicio de espacio.
+   * Segmentación pura: No sufre de fragmentación externa, ya que los segmentos de memoria se asignan de forma independiente y no hay necesidad de encontrar bloques continuos.
+   * Paginación pura: No sufre de fragmentación externa, ya que las páginas de memoria se asignan de forma independiente y no es necesario encontrar bloques continuos.
 
+2. Fragmentación interna.
+
+   * Asignación continua: Puede sufrir de fragmentación interna, especialmente cuando los bloques de memoria asignados son más grandes que el tamaño requerido por el proceso. Esto puede conducir a un desperdicio de memoria debido al espacio no utilizado dentro de los bloques asignados.
+   * Segmentación pura: No sufre de fragmentación interna, ya que los segmentos de memoria se asignan de forma independiente y solo ocupan el tamaño necesario para el proceso.
+   * Paginación pura: Puede sufrir de fragmentación interna, ya que los procesos se dividen en páginas de tamaño fijo y puede haber espacio no utilizado dentro de una página asignada al proceso.
+
+3. Capacidad de compartir código.
+   * Asignación continua: Es difícil compartir código entre diferentes procesos debido a la asignación continua de memoria, ya que los procesos tendrían que compartir bloques de memoria específicos.
+   * Segmentación pura: Permite compartir código fácilmente entre procesos, ya que los segmentos de código pueden ser compartidos entre diferentes procesos, lo que ahorra memoria y permite una mayor eficiencia en la ejecución de programas.
+   * Paginación pura: También permite compartir código entre procesos, ya que las páginas de código pueden ser compartidas. Sin embargo, la compartición de código puede requerir técnicas adicionales, como la protección de páginas compartidas contra escritura por parte de diferentes procesos.
 
 ### 7. En un OS con paginación, un proceso no puede acceder a una zona de memoria que no sea de su propiedad. 
 1. ¿Por qué? 

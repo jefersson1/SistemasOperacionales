@@ -105,13 +105,27 @@ Para soportar la asignación dinámica de memoria en los esquemas mencionados, s
    * Paginación pura: También permite compartir código entre procesos, ya que las páginas de código pueden ser compartidas. Sin embargo, la compartición de código puede requerir técnicas adicionales, como la protección de páginas compartidas contra escritura por parte de diferentes procesos.
 
 ### 7. En un OS con paginación, un proceso no puede acceder a una zona de memoria que no sea de su propiedad. 
-1. ¿Por qué? 
+1. ¿Por qué?
+
+La razón por la cual un proceso no puede acceder a una zona de memoria que no le pertenezca es mantener la seguridad y la integridad del sistema. Si se permitiera el acceso a zonas de memoria de otros procesos, esto podría resultar en violaciones de privacidad, corrupción de datos y posibles fallas del sistema. Cada proceso está aislado en su propio espacio de direcciones virtuales, lo que proporciona protección y evita interferencias entre procesos.
+
 2. ¿Como podía el OS permitir el acceso a otras zonas de memoria?
+
+El sistema operativo puede proporcionar mecanismos controlados para permitir el acceso a zonas de memoria específicas. Esto se puede lograr mediante técnicas como permisos de acceso, segmentos de memoria compartidos o llamadas al sistema especiales que permitan la comunicación entre procesos.
+
 3. ¿Por qué debería o por qué no debería?
 
+La decisión de permitir o no el acceso a otras zonas de memoria depende de los requisitos y políticas de seguridad del sistema operativo y las aplicaciones en ejecución. Permitir el acceso a otras zonas de memoria puede ser útil para ciertos casos de uso, como la comunicación y el intercambio de datos eficiente entre procesos. Sin embargo, también puede plantear riesgos de seguridad y puede ser necesario implementar mecanismos de control y protección adicionales para garantizar que el acceso sea seguro y confiable.
 
 ### 8. Compare el mecanismo de paginación con el de segmentación con respecto a la cantidad de  memoria requerida por las estructuras de producción de direcciones para convertir las direcciones virtuales en direcciones físicas.
 
+| Paginación  | Segmentación  |
+|---|---|
+| En la paginación, la memoria se divide en páginas de tamaño fijo tanto en el espacio de direcciones virtuales como en el espacio de direcciones físicas.  | En la segmentación, la memoria se divide en segmentos lógicos de diferentes tamaños, que representan diferentes partes funcionales de un programa.  |
+| Se utiliza una tabla de páginas para realizar la traducción de direcciones virtuales a direcciones físicas.  | Se utiliza una tabla de segmentos para realizar la traducción de direcciones virtuales a direcciones físicas.  |
+| La tabla de páginas mantiene un registro de las correspondencias entre las páginas virtuales y las páginas físicas, y se necesita un registro de página por cada página virtual en uso.  | La tabla de segmentos mantiene un registro de las correspondencias entre los segmentos lógicos y los segmentos físicos, y se necesita un registro de segmento por cada segmento lógico en uso en el sistema.  |
+| Por lo tanto, la cantidad de memoria requerida por la tabla de páginas depende del número total de páginas virtuales en uso en el sistema.  | La cantidad de memoria requerida por la tabla de segmentos depende del número total de segmentos lógicos en uso en el sistema.  |
+| La tabla de páginas se almacena en la memoria principal y ocupa un espacio relativamente pequeño en comparación con el tamaño total de la memoria.  | La tabla de segmentos también se almacena en la memoria principal y ocupa un espacio relativamente pequeño en comparación con el tamaño total de la memoria.  |
 
 ### 9. Considere la siguiente tabla de segmento:
 

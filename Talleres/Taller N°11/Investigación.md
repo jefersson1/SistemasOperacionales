@@ -137,4 +137,42 @@ La decisión de permitir o no el acceso a otras zonas de memoria depende de los 
 4. 3. 400
 5. 4. 112
 
+* Dirección lógica: 0.430
+
+Segmento: 0
+Desplazamiento: 430
+Dirección física = Base del segmento 0 + Desplazamiento = 219 + 430 = 649
+
+* Dirección lógica: 1.10
+
+Segmento: 1
+Desplazamiento: 10
+Dirección física = Base del segmento 1 + Desplazamiento = 2300 + 10 = 2310
+
+* Dirección lógica: 2.500
+
+Segmento: 2
+Desplazamiento: 500
+Dirección física = Base del segmento 2 + Desplazamiento = 90 + 500 = 590
+
+* Dirección lógica: 3.400
+
+Segmento: 3
+Desplazamiento: 400
+Dirección física = Base del segmento 3 + Desplazamiento = 1327 + 400 = 1727
+
+* Dirección lógica: 4.112
+
+Segmento: 4
+Desplazamiento: 112
+Dirección física = Base del segmento 4 + Desplazamiento = 1952 + 112 = 2064
+
+Entonces, las direcciones físicas correspondientes son:
+
+Dirección física para 0.430: 649
+Dirección física para 1.10: 2310
+Dirección física para 2.500: 590
+Dirección física para 3.400: 1727
+Dirección física para 4.112: 2064
+
 

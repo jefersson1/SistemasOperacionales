@@ -5,13 +5,13 @@
 
 Para implementar la paginación bajo demanda, se requiere soporte tanto a nivel de hardware como de software. A continuación, los siguientes puintos son el soporte por hardware necesario:
 
-Unidad de gestión de memoria (MMU): Es necesaria para traducir las direcciones virtuales en direcciones físicas y manejar excepciones cuando se accede a una página ausente en la memoria principal.
+* Unidad de gestión de memoria (MMU): Es necesaria para traducir las direcciones virtuales en direcciones físicas y manejar excepciones cuando se accede a una página ausente en la memoria principal.
 
-Tabla de páginas: Es una estructura de datos utilizada por la MMU para realizar las traducciones de direcciones virtuales a direcciones físicas.
+* Tabla de páginas: Es una estructura de datos utilizada por la MMU para realizar las traducciones de direcciones virtuales a direcciones físicas.
 
-Mecanismos de control de acceso a memoria: Deben existir para definir niveles de protección en las páginas y generar excepciones cuando se accede incorrectamente a una página protegida.
+* Mecanismos de control de acceso a memoria: Deben existir para definir niveles de protección en las páginas y generar excepciones cuando se accede incorrectamente a una página protegida.
 
-Unidad de gestión de memoria secundaria: Permite cargar y liberar páginas de memoria en una memoria secundaria, como un disco duro.
+* Unidad de gestión de memoria secundaria: Permite cargar y liberar páginas de memoria en una memoria secundaria, como un disco duro.
 
 ### 2. ¿Qué es la característica de copia durante la escritura y en que circunstancias es ventajoso usar estas características?
 

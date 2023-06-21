@@ -58,11 +58,11 @@ marcos libres, ¿cómo puede generarse espacio libre para la nueva página solic
 
 Para generar espacio libre para la nueva página solicitada se deben seguir los siguientes pasos:
 
-Identificación de una página para reemplazo: El conjunto compartido de marcos libres se gestiona utilizando la política de sustitución menos recientemente utilizadas (LRU), lo que implica que se selecciona la página que ha sido utilizada menos recientemente para ser reemplazada.
+  * Identificación de una página para reemplazo: El conjunto compartido de marcos libres se gestiona utilizando la política de sustitución menos recientemente utilizadas (LRU), lo que implica que se selecciona la página que ha sido utilizada menos recientemente para ser reemplazada.
 
-Retirar la página seleccionada: La página que ha sido seleccionada según la política LRU se retira del conjunto compartido de marcos libres, liberando así un marco que puede ser utilizado para almacenar la nueva página solicitada.
+* Retirar la página seleccionada: La página que ha sido seleccionada según la política LRU se retira del conjunto compartido de marcos libres, liberando así un marco que puede ser utilizado para almacenar la nueva página solicitada.
 
-Asignación del marco libre a la nueva página: Una vez que se ha generado espacio libre al retirar una página del conjunto compartido de marcos libres, se asigna el marco libre a la nueva página solicitada. Esto implica cargar el contenido de la página solicitada en el marco libre recién liberado.
+* Asignación del marco libre a la nueva página: Una vez que se ha generado espacio libre al retirar una página del conjunto compartido de marcos libres, se asigna el marco libre a la nueva página solicitada. Esto implica cargar el contenido de la página solicitada en el marco libre recién liberado.
 
 * Si se produce un fallo de página y la página se encuentra en el conjunto compartido de 
 marcos libres, ¿cómo se activa la página residente y cómo se gestiona el conjunto 

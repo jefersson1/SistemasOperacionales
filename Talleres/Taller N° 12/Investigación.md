@@ -58,47 +58,43 @@ marcos libres, ¿cómo puede generarse espacio libre para la nueva página solic
 
 Para generar espacio libre para la nueva página solicitada se deben seguir los siguientes pasos:
 
-  * Identificación de una página para reemplazo: El conjunto compartido de marcos libres se gestiona utilizando la política de sustitución menos recientemente utilizadas (LRU), lo que implica que se selecciona la página que ha sido utilizada menos recientemente para ser reemplazada.
+   * Identificación de una página para reemplazo: El conjunto compartido de marcos libres se gestiona utilizando la política de sustitución menos recientemente utilizadas (LRU), lo que implica que se selecciona la página que ha sido utilizada menos recientemente para ser reemplazada.
 
-* Retirar la página seleccionada: La página que ha sido seleccionada según la política LRU se retira del conjunto compartido de marcos libres, liberando así un marco que puede ser utilizado para almacenar la nueva página solicitada.
+   * Retirar la página seleccionada: La página que ha sido seleccionada según la política LRU se retira del conjunto compartido de marcos libres, liberando así un marco que puede ser utilizado para almacenar la nueva página solicitada.
 
-* Asignación del marco libre a la nueva página: Una vez que se ha generado espacio libre al retirar una página del conjunto compartido de marcos libres, se asigna el marco libre a la nueva página solicitada. Esto implica cargar el contenido de la página solicitada en el marco libre recién liberado.
+   * Asignación del marco libre a la nueva página: Una vez que se ha generado espacio libre al retirar una página del conjunto compartido de marcos libres, se asigna el marco libre a la nueva página solicitada. Esto implica cargar el contenido de la página solicitada en el marco libre recién liberado.
 
-* Si se produce un fallo de página y la página se encuentra en el conjunto compartido de 
+   * Si se produce un fallo de página y la página se encuentra en el conjunto compartido de 
 marcos libres, ¿cómo se activa la página residente y cómo se gestiona el conjunto 
 compartido de marcos libres para hacer sitio para la página solicitada?
 
 Pasos para activar la página residente y gestionar el conjunto compartido de marcos libres para hacer espacio para la página solicitada:
 
-* Activación de la página residente: La página residente que se encuentra en el conjunto compartido de marcos libres debe ser activada para que se cargue en un marco disponible en memoria principal. Esto implica trasladar la página residente desde el conjunto compartido al marco asignado.
+   * Activación de la página residente: La página residente que se encuentra en el conjunto compartido de marcos libres debe ser activada para que se cargue en un marco disponible en memoria principal. Esto implica trasladar la página residente desde el conjunto compartido al marco asignado.
 
-* Liberación de un marco para la página solicitada: Una vez que la página residente ha sido activada y cargada en memoria principal, se libera un marco en el conjunto compartido de marcos libres para hacer espacio para la página solicitada. Esto se logra seleccionando la página menos recientemente utilizada en el conjunto compartido según la política de sustitución menos recientemente utilizadas (LRU) y retirándola del conjunto.
+   * Liberación de un marco para la página solicitada: Una vez que la página residente ha sido activada y cargada en memoria principal, se libera un marco en el conjunto compartido de marcos libres para hacer espacio para la página solicitada. Esto se logra seleccionando la página menos recientemente utilizada en el conjunto compartido según la política de sustitución menos recientemente utilizadas (LRU) y retirándola del conjunto.
 
-* Asignación del marco libre a la página solicitada: Después de liberar el marco en el conjunto compartido, se asigna ese marco libre a la nueva página solicitada. El contenido de la página solicitada se carga en el marco liberado, permitiendo que la página esté disponible en memoria principal.
+   * Asignación del marco libre a la página solicitada: Después de liberar el marco en el conjunto compartido, se asigna ese marco libre a la nueva página solicitada. El contenido de la página solicitada se carga en el marco liberado, permitiendo que la página esté disponible en memoria principal.
 
-* Actualización del conjunto compartido de marcos libres: Tras la asignación del marco libre a la página solicitada, es importante actualizar el conjunto compartido de marcos libres para mantenerlo correctamente organizado y reflejar los cambios en el uso de las páginas. Esto puede implicar actualizar el estado de las páginas (marcarlas como activas o inactivas) y reorganizar el conjunto según la política LRU.
+   * Actualización del conjunto compartido de marcos libres: Tras la asignación del marco libre a la página solicitada, es importante actualizar el conjunto compartido de marcos libres para mantenerlo correctamente organizado y reflejar los cambios en el uso de las páginas. Esto puede implicar actualizar el estado de las páginas (marcarlas como activas o inactivas) y reorganizar el conjunto según la política LRU.
 
 
 ### 7. Considere un sistema de paginación bajo demanda con las siguientes tasas de utilización:
 
 * Uso de CPU 20%
-
-
 * Paginación de disco 97,7%
-
-
 * Otros dispositivos de I/O 5%
 
 Para las siguientes afirmaciones, indique si permitirá o es probable que permita mejorar las 
 tasas de utilización de la CPU. De razones para su respuesta.
 
 
-* Instalar una CPU más rápida.
+* Instalar una CPU más rápida: Es probable que instalar una CPU más rápida permita mejorar la tasa de utilización de la CPU. Una CPU más rápida puede realizar las instrucciones con mayor velocidad, lo que significa que los procesos se ejecutarán de manera más eficiente y se liberará la CPU para ejecutar más tareas en un período de tiempo determinado. Sin embargo, es importante tener en cuenta que la mejora en la tasa de utilización de la CPU también puede depender de otros factores, como la capacidad de respuesta de otros componentes del sistema y la optimización general del software.
 
-* Instalar un disco de paginación de mayor tamaño.
+* Instalar un disco de paginación de mayor tamaño: La instalación de un disco de paginación de mayor tamaño no mejorará directamente la tasa de utilización de la CPU. El tamaño del disco de paginación está relacionado con la capacidad de almacenamiento de las páginas en disco y su acceso eficiente, pero no influye directamente en la tasa de utilización de la CPU. Sin embargo, un disco de paginación más grande puede ayudar a mejorar el rendimiento general del sistema al reducir la necesidad de realizar frecuentes operaciones de E/S de paginación, lo que a su vez podría permitir un mejor uso de la CPU.
 
-* Incrementar el grado de multiprogramación.
+* Incrementar el grado de multiprogramación: Incrementar el grado de multiprogramación (permitir que se ejecuten más procesos simultáneamente) es probable que permita mejorar la tasa de utilización de la CPU. Al permitir que más procesos se ejecuten al mismo tiempo, se puede aprovechar mejor la capacidad de procesamiento de la CPU y reducir el tiempo de inactividad de la misma. Esto puede mejorar la tasa de utilización de la CPU, especialmente si hay suficientes procesos listos para ejecutarse y no hay cuellos de botella en otros componentes del sistema.
 
-* Instalar mas memoria principal.
+* Instalar mas memoria principal: Instalar más memoria principal es probable que permita mejorar la tasa de utilización de la CPU. Al aumentar la cantidad de memoria principal disponible, se pueden almacenar más páginas de proceso en la memoria, lo que reduce la necesidad de realizar operaciones de E/S de paginación frecuentes. Esto mejora el rendimiento general del sistema y permite un mejor uso de la CPU al reducir el tiempo dedicado a la gestión de páginas.
 
-* Instalar un disco duro mas rápidos.
+* Instalar un disco duro mas rápidos: La instalación de un disco duro más rápido no mejorará directamente la tasa de utilización de la CPU. La velocidad del disco duro está relacionada con la velocidad de lectura y escritura de los datos en el disco, pero no afecta directamente la capacidad de procesamiento de la CPU. Sin embargo, un disco duro más rápido puede ayudar a reducir los tiempos de acceso a las páginas de disco y mejorar el rendimiento general del sistema, lo que a su vez podría permitir un mejor uso de la CPU.

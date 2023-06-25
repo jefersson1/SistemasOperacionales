@@ -1,4 +1,4 @@
-## TALLER N°11 DE SISTEMAS OPERACIONALES
+## TALLER N°12 DE SISTEMAS OPERACIONALES
 
 
 ### 1. Explique el soporte por hardware requerido para implementar la paginación bajo demanda.

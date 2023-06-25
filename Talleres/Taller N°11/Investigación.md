@@ -1,4 +1,4 @@
-## TALLER N°10 DE SISTEMAS OPERACIONALES
+## TALLER N°11 DE SISTEMAS OPERACIONALES
 
 
 ### 1.  Explique la diferencia entre los conceptos de fragmentación interna y externa.

@@ -1,4 +1,4 @@
-## TALLER N°9 DE SISTEMAS OPERACIONALES
+## TALLER N°10 DE SISTEMAS OPERACIONALES
 
 
 ### 1. Considere la imagen, demuestre que las cuatro condiciones necesarias para que se produzca un interbloqueo se cumplen.

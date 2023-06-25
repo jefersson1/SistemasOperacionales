@@ -13,3 +13,15 @@ stress-ng: es una herramienta de estrés para sistemas Linux que permite generar
 
 
 ##### 3:
+
+* Evaluación de la CPU:
+
+En las diferentes ejecuciones,se pudo observar fluctuaciones en el uso de la CPU, con valores que varían entre 85% y 94%. Esto indica que el sistema experimenta una carga considerable durante las pruebas de estrés. Sin embargo, en general, se puede observar una tendencia hacia un uso más alto de la CPU en las ejecuciones 1, 3 y 5, mientras que las ejecuciones 2 y 4 parecen tener un uso relativamente menor. Estas variaciones podrían deberse a la asignación de tareas específicas a los núcleos de la CPU y a la disponibilidad de recursos en cada ejecución.
+
+* Evaluación de la memoria:
+
+Durante las pruebas de estrés de la memoria, se puede notar que la cantidad de memoria utilizada varía entre 1.1GB y 1.4GB en las diferentes ejecuciones. Al igual que en la evaluación de la CPU, hay fluctuaciones en los resultados. No se observa una tendencia clara de aumento o disminución constante en el uso de la memoria entre las ejecuciones. Esto puede depender de la forma en que el sistema gestiona la asignación y liberación de memoria durante cada ejecución de estrés.
+
+* Evaluación del manejo de procesos e hilos:
+
+En las pruebas de manejo de procesos e hilos, se crean un número específico de procesos y hilos. En los resultados obtenidos, vemos que se crean 4 procesos y 16 hilos en cada ejecución. No se observan grandes variaciones en este caso, lo que sugiere que el sistema tiene la capacidad de crear y administrar estos procesos e hilos de manera consistente en todas las ejecuciones. Sin embargo, es importante destacar que los resultados obtenidos son bastante estables y podrían variar en otros entorno virtuales, dependiendo de la carga actual del sistema y otros factores.
